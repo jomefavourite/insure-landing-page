@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:ital,wght@0,400;0,700;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply px-6 py-2 tracking-widest border-2 border-white uppercase font-karla;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* .work {
+  background-image: url("../public/images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+} */
+
+.work2 {
+  background-image: url("../public/images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  /* background-position: 10%; */
+}
+
+a:hover {
+  color: #2b272f;
+}
