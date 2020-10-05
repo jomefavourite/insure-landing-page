@@ -1,89 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <title>Frontend Mentor | Insure landing page</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="max-w-screen-xl m-auto">
-      <!-- Nav section -->
-      <div class="relative">
-        <div class="flex justify-between items-center p-5 bg-white">
-          <img class="h-full" src="./images/logo.svg" alt="logo" />
-          <img
-            src="./images/icon-hamburger.svg"
-            alt="icon-hamburger"
-            id="ham"
-            class="md:hidden"
-          />
-          <img
-            class="hidden"
-            src="./images/icon-close.svg"
-            alt="icon-close"
-            id="close"
-          />
-          <nav
-            class="hidden uppercase text-color4 text-center font-karla font-bold md:block"
-          >
-            <ul class="md:flex">
-              <li class=""><a href="#">How we work</a></li>
-              <li class="ml-8"><a href="#">Blog</a></li>
-              <li class="ml-8"><a href="#">Account</a></li>
-              <li class="ml-8"><a href="#">View plans</a></li>
-            </ul>
-          </nav>
-        </div>
 
-        <!-- M -->
-        <nav
-          class="hidden absolute bg-color3 w-full h-screen uppercase text-center text-white font-karla font-bold"
-          id="nav"
-        >
-          <ul>
-            <li class="mt-12 border-0 hover:border-2">
-              <a href="#" class="">How we work</a>
-            </li>
-            <li class="mt-12 hover:border hover:border-2">Blog</li>
-            <li class="mt-12 hover:border hover:border-2">Account</li>
-            <li class="mt-12 hover:border hover:border-2">View plans</li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Frontend Mentor | Insure landing page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="max-w-screen-xl m-auto">
+    <!-- Nav section -->
+    <div class="relative">
+      <div class="flex justify-between items-center p-5 bg-white">
+        <img class="h-full" src="./images/logo.svg" alt="logo" />
+        <img src="./images/icon-hamburger.svg" alt="icon-hamburger" id="ham" class="md:hidden" />
+        <img class="hidden" src="./images/icon-close.svg" alt="icon-close" id="close" />
+        <nav class="hidden uppercase text-color4 text-center font-karla font-bold md:block">
+          <ul class="md:flex">
+            <li class=""><a href="#">How we work</a></li>
+            <li class="ml-8"><a href="#">Blog</a></li>
+            <li class="ml-8"><a href="#">Account</a></li>
+            <li class="ml-8"><a href="#">View plans</a></li>
           </ul>
         </nav>
       </div>
-    </header>
-    <main>
-      <div class="md:flex">
-        <div
-          class="md:relatve max-w-screen-xl  h-full bg-red-500 md:w-full md:h-full md:order-2"
-        >
-          <picture class="md:absolute md:bottom-0 md:mr-4 w-full">
-            <source
-              media="(max-width:378px)"
-              srcset="./images/image-intro-mobile.jpg"
-              class="object-cover w-full"
-            />
-            <source
-              media="(min-width:379px)"
-              srcset="./images/image-intro-desktop.jpg"
-            />
-            <img
-              class="object-cover w-full max-w-2xl md:max-w-sm"
-              src="./images/image-intro-mobile.jpg"
-              alt=""
-            />
+
+      <!-- M -->
+      <nav class="hidden absolute bg-color3 w-full h-screen uppercase text-center text-white font-karla font-bold"
+        id="nav">
+        <ul>
+          <li class="mt-12 border-0 hover:border-2">
+            <a href="#" class="">How we work</a>
+          </li>
+          <li class="mt-12 hover:border hover:border-2">Blog</li>
+          <li class="mt-12 hover:border hover:border-2">Account</li>
+          <li class="mt-12 hover:border hover:border-2">View plans</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="bg-color1 ">
+      <div class="md:max-w-screen-lg md:flex md:mx-auto">
+        <div class="md:relatve max-w-screen-xl   h-full  md:w-full md:h-full md:order-2">
+          <picture class="md:relative ">
+            <source media="(max-width:378px)" srcset="./images/image-intro-mobile.jpg" class="object-cover w-full" />
+            <source media="(min-width:379px)" srcset="./images/image-intro-desktop.jpg" />
+            <img class="object-cover w-full max-w-2xl md:max-w-sm  md:transform md:translate-y-24"
+              src="./images/image-intro-mobile.jpg" alt="" />
           </picture>
         </div>
-        <section class="bg-color1 text-center text-white px-6 py-16">
+        <section class="  text-center text-white px-6 py-16">
           <div class="max-w-screen-xl m-auto md:text-left">
-            <div class="md:max-w-md">
+            <div class="md:max-w-4xl">
               <h1 class="text-5xl font-bold font-dm leading-10">
                 Humanizing your insurance.
               </h1>
@@ -99,153 +71,136 @@
           </div>
         </section>
       </div>
+    </div>
 
-      <!-- Second Section -->
-      <section class="text-center px-6 my-40 max-w-screen-xl m-auto">
-        <span class="w-48 h-px m-auto bg-color3 block mb-8 md:ml-0"></span>
-        <h2 class="text-4xl font-bold font-dm md:text-left">We’re different</h2>
+    <!-- Second Section -->
+    <section class="text-center px-6 my-40 max-w-screen-xl m-auto">
+      <span class="w-48 h-px m-auto bg-color3 block mb-8 md:ml-0"></span>
+      <h2 class="text-4xl font-bold font-dm md:text-left">We’re different</h2>
 
-        <div class="md:grid md:grid-cols-3 md:gap-12">
-          <div class="mt-12 md:text-left">
-            <img
-              class="m-auto md:m-0"
-              src="./images/icon-snappy-process.svg"
-              alt=""
-            />
-            <h3 class="text-3xl font-dm mt-4">Snappy Process</h3>
+      <div class="md:grid md:grid-cols-3 md:gap-12">
+        <div class="mt-12 md:text-left">
+          <img class="m-auto md:m-0" src="./images/icon-snappy-process.svg" alt="" />
+          <h3 class="text-3xl font-dm mt-4">Snappy Process</h3>
 
-            <p class="text-color4 font-normal font-karla mt-4 max-w-md m-auto">
-              Our application process can be completed in minutes, not hours.
-              Don’t get stuck filling in tedious forms.
-            </p>
-          </div>
-
-          <div class="mt-12 md:text-left">
-            <img
-              class="m-auto md:m-0"
-              src="./images/icon-affordable-prices.svg"
-              alt=""
-            />
-            <h3 class="text-3xl font-dm mt-4">Affordable Prices</h3>
-            <p class="text-color4 font-normal font-karla mt-4 max-w-md m-auto">
-              We don’t want you worrying about high monthly costs. Our prices
-              may be low, but we still offer the best coverage possible.
-            </p>
-          </div>
-
-          <div class="mt-12 md:text-left">
-            <img
-              class="m-auto md:m-0"
-              src="./images/icon-people-first.svg"
-              alt=""
-            />
-
-            <h3 class="text-3xl font-dm mt-4">People First</h3>
-
-            <p class="text-color4 font-normal font-karla mt-4 max-w-md m-auto">
-              Our plans aren’t full of conditions and clauses to prevent
-              payouts. We make sure you’re covered when you need it.
-            </p>
-          </div>
+          <p class="text-color4 font-normal font-karla mt-4 max-w-md m-auto">
+            Our application process can be completed in minutes, not hours.
+            Don’t get stuck filling in tedious forms.
+          </p>
         </div>
 
-        <div
-          class="bg-no-repeat bg-right bg-color1 py-12 px-10 leading-10 text-white mt-40 md:flex md:items-center"
-          style="
-            background-image: url('./images/bg-pattern-how-we-work-mobile.svg');
-          "
-        >
-          <h2 class="text-4xl font-dm mb-6 md:text-left md:max-w-xs">
-            Find out more about how we work
-          </h2>
-
-          <button
-            class="btn hover:bg-white hover:text-black md:ml-auto md:h-full"
-          >
-            How we work
-          </button>
-        </div>
-      </section>
-    </main>
-
-    <footer class="text-center px-6 bg-color5 py-24">
-      <div
-        class="max-w-screen-xl m-auto bg-top2 bg-no-repeat"
-        style="background-image: url('images/bg-pattern-footer-mobile.svg')"
-      >
-        <div class="md:flex md:justify-between bg-footer-mobile">
-          <img class="m-auto md:mx-0" src="./images/logo.svg" alt="logo" />
-
-          <div class="flex w-40 m-auto my-8 md:mx-0">
-            <img class="m-auto" src="./images/icon-facebook.svg" alt="icon" />
-            <img class="m-auto" src="./images/icon-twitter.svg" alt="icon" />
-            <img class="m-auto" src="./images/icon-pinterest.svg" alt="icon" />
-            <img class="m-auto" src="./images/icon-instagram.svg" alt="icon" />
-          </div>
+        <div class="mt-12 md:text-left">
+          <img class="m-auto md:m-0" src="./images/icon-affordable-prices.svg" alt="" />
+          <h3 class="text-3xl font-dm mt-4">Affordable Prices</h3>
+          <p class="text-color4 font-normal font-karla mt-4 max-w-md m-auto">
+            We don’t want you worrying about high monthly costs. Our prices
+            may be low, but we still offer the best coverage possible.
+          </p>
         </div>
 
-        <hr />
+        <div class="mt-12 md:text-left">
+          <img class="m-auto md:m-0" src="./images/icon-people-first.svg" alt="" />
 
-        <div class="md:grid md:grid-cols-4 md:text-left">
-          <div class="uppercase my-8">
-            <h4 class="text-color4 font-semibold">Our company</h4>
+          <h3 class="text-3xl font-dm mt-4">People First</h3>
 
-            <nav class="my-6">
-              <ul class="font-bold text-color3 font-karla">
-                <li>How we work</li>
-                <li class="mt-3">Why Insure?</li>
-                <li class="mt-3">View plans</li>
-                <li class="mt-3">Reviews</li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="uppercase my-8">
-            <h4 class="text-color4 font-semibold">Help me</h4>
-
-            <nav class="my-6">
-              <ul class="font-bold text-color3 font-karla">
-                <li>FAQ</li>
-                <li class="mt-3">Terms of use</li>
-                <li class="mt-3">Privacy policy</li>
-                <li class="mt-3">Cookies</li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="uppercase my-8">
-            <h4 class="text-color4 font-semibold">Contact</h4>
-
-            <nav class="my-6">
-              <ul class="font-bold text-color3 font-karla">
-                <li>Sales</li>
-                <li class="mt-3">Support</li>
-                <li class="mt-3">Live chat</li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="uppercase my-8">
-            <h4 class="text-color4 font-semibold">Others</h4>
-
-            <nav class="my-6">
-              <ul class="font-bold text-color3 font-karla">
-                <li>Careers</li>
-                <li class="mt-3">Press</li>
-                <li class="mt-3">Licenses</li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-
-        <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Jome Favourite</a>.
+          <p class="text-color4 font-normal font-karla mt-4 max-w-md m-auto">
+            Our plans aren’t full of conditions and clauses to prevent
+            payouts. We make sure you’re covered when you need it.
+          </p>
         </div>
       </div>
-    </footer>
-    <script src="app.js"></script>
-  </body>
+
+      <div class="bg-no-repeat bg-right bg-color1 py-12 px-10 leading-10 text-white mt-40 md:flex md:items-center"
+        style="
+            background-image: url('./images/bg-pattern-how-we-work-mobile.svg');
+          ">
+        <h2 class="text-4xl font-dm mb-6 md:text-left md:max-w-xs">
+          Find out more about how we work
+        </h2>
+
+        <button class="btn hover:bg-white hover:text-black md:ml-auto md:h-full">
+          How we work
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center px-6 bg-color5 py-24">
+    <div class="max-w-screen-xl m-auto bg-top2 bg-no-repeat"
+      style="background-image: url('images/bg-pattern-footer-mobile.svg')">
+      <div class="md:flex md:justify-between bg-footer-mobile">
+        <img class="m-auto md:mx-0" src="./images/logo.svg" alt="logo" />
+
+        <div class="flex w-40 m-auto my-8 md:mx-0">
+          <img class="m-auto" src="./images/icon-facebook.svg" alt="icon" />
+          <img class="m-auto" src="./images/icon-twitter.svg" alt="icon" />
+          <img class="m-auto" src="./images/icon-pinterest.svg" alt="icon" />
+          <img class="m-auto" src="./images/icon-instagram.svg" alt="icon" />
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="md:grid md:grid-cols-4 md:text-left">
+        <div class="uppercase my-8">
+          <h4 class="text-color4 font-semibold">Our company</h4>
+
+          <nav class="my-6">
+            <ul class="font-bold text-color3 font-karla">
+              <li>How we work</li>
+              <li class="mt-3">Why Insure?</li>
+              <li class="mt-3">View plans</li>
+              <li class="mt-3">Reviews</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="uppercase my-8">
+          <h4 class="text-color4 font-semibold">Help me</h4>
+
+          <nav class="my-6">
+            <ul class="font-bold text-color3 font-karla">
+              <li>FAQ</li>
+              <li class="mt-3">Terms of use</li>
+              <li class="mt-3">Privacy policy</li>
+              <li class="mt-3">Cookies</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="uppercase my-8">
+          <h4 class="text-color4 font-semibold">Contact</h4>
+
+          <nav class="my-6">
+            <ul class="font-bold text-color3 font-karla">
+              <li>Sales</li>
+              <li class="mt-3">Support</li>
+              <li class="mt-3">Live chat</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="uppercase my-8">
+          <h4 class="text-color4 font-semibold">Others</h4>
+
+          <nav class="my-6">
+            <ul class="font-bold text-color3 font-karla">
+              <li>Careers</li>
+              <li class="mt-3">Press</li>
+              <li class="mt-3">Licenses</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+          href="#">Jome Favourite</a>.
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
 </html>
